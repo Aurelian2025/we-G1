@@ -279,6 +279,24 @@
       h3 { font-size: 16px; }
       .page { padding: 4px 6px 18px; }
     }
+/* Price box hover + tap animation */
+.price-box {
+  transition: all 0.2s ease;
+}
+
+.price-box:hover {
+  box-shadow: 0 0 16px rgba(37, 99, 235, 0.45); /* blue glow */
+  transform: translateY(-2px);
+}
+
+/* Mobile tap animation */
+@media (max-width: 600px) {
+  .price-box:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.35);
+  }
+}
+
   </style>
 </head>
 <body>
