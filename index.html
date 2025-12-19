@@ -12,7 +12,24 @@
 
   gtag('config', 'AW-10894204123');
 </script>
-  
+ <!-- Event snippet for Purchase conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10894204123/hRUSCIC4qdQbENu54coo',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+ 
   <title>Ontario G1 Practice Test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ontario G1 Practice Test – 200+ original questions, road signs and rules, mock exams, and 30-day money-back guarantee.">
