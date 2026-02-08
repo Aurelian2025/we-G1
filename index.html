@@ -1,314 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  
-  <!-- Google tag (gtag.js) -->
+<meta charset="UTF-8">
+
+<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10894204123"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-10894204123');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-10894204123');
 </script>
 
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-10894204123/hRUSCIC4qdQbENu54coo',
-      'transaction_id': '',
-      'event_callback': callback
-  });
-  return false;
+<title>Ontario G1 Practice Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ontario G1 Practice Test – 200+ original questions, road signs and rules, mock exams.">
+
+<style>
+:root{
+--blue:#2563eb;
+--blue-dark:#1d4ed8;
+--bg-light:#f3f4f6;
+--text-main:#111827;
+--text-muted:#6b7280;
+--card-radius:14px;
+--shadow-soft:0 4px 12px rgba(15,23,42,0.08);
 }
-</script>
- 
-  <title>Ontario G1 Practice Test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ontario G1 Practice Test – 200+ original questions, road signs and rules, mock exams.">
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Arial,sans-serif;background:#e5e7eb;color:var(--text-main);line-height:1.6;}
+.page{max-width:1100px;margin:0 auto;padding:8px 10px 24px;}
 
-  <style>
-    :root {
-      --blue: #2563eb;
-      --blue-dark: #1d4ed8;
-      --bg-light: #f3f4f6;
-      --text-main: #111827;
-      --text-muted: #6b7280;
-      --card-radius: 14px;
-      --shadow-soft: 0 4px 12px rgba(15,23,42,0.08);
-    }
+.card{background:#fff;border-radius:var(--card-radius);box-shadow:var(--shadow-soft);padding:16px 18px;margin:8px 0;}
+h1,h2,h3{font-weight:700;color:#0f172a;}
+h1{font-size:28px;} h2{font-size:22px;} h3{font-size:18px;}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+.btn-primary{
+display:inline-block;background:var(--blue);color:#fff;
+padding:10px 24px;border-radius:999px;text-decoration:none;
+font-size:15px;font-weight:bold;
+}
+.btn-primary:hover{background:var(--blue-dark);}
+.center{text-align:center;}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #e5e7eb;
-      color: var(--text-main);
-      line-height: 1.6;
-    }
+.hero{padding:10px 16px 18px;}
+.hero-subtitle{font-size:15px;margin:10px 0 12px;color:#1f2937;}
 
-    .page {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 8px 10px 24px;
-    }
+.hero-list{
+list-style:none;margin:10px auto 12px;
+max-width:580px;text-align:left;font-size:14px;color:#4b5563;
+}
 
-    .card {
-      background: #ffffff;
-      border-radius: var(--card-radius);
-      box-shadow: var(--shadow-soft);
-      padding: 16px 18px;
-      margin: 8px 0;
-    }
+.section-grey{
+background:#f3f4f6;padding:18px 16px;border-radius:var(--card-radius);
+box-shadow:var(--shadow-soft);margin:8px 0;
+}
 
-    h1, h2, h3 { font-weight: 700; color: #0f172a; }
-    h1 { font-size: 28px; }
-    h2 { font-size: 22px; }
-    h3 { font-size: 18px; }
-    p { font-size: 14px; }
+.included-grid{
+display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;margin-top:10px;
+}
+.included-item{
+flex:1 1 260px;padding:14px;background:#fff;border-radius:10px;
+border:1px solid #e5e7eb;font-size:14px;color:#4b5563;
+}
 
-    .btn-primary {
-      display: inline-block;
-      background: var(--blue);
-      color: #ffffff;
-      padding: 10px 24px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold;
-    }
+.pricing{text-align:center;}
+.price-box{
+display:inline-block;padding:12px 18px;border-radius:12px;
+border:2px solid var(--blue);background:#eff6ff;margin:8px 0 10px;
+transition:all .2s ease;
+}
+.price-box:hover{
+box-shadow:0 0 16px rgba(37,99,235,.45);
+transform:translateY(-2px);
+}
+.price-main{font-size:24px;font-weight:bold;color:var(--blue-dark);}
+.price-main span{font-size:14px;font-weight:normal;color:#4b5563;}
 
-    .btn-primary:hover { background: var(--blue-dark); }
-    .center { text-align: center; }
+.pricing-list{
+list-style:none;max-width:460px;margin:8px auto 10px;text-align:left;
+font-size:14px;color:#374151;
+}
 
-    .hero { padding: 10px 16px 18px; }
-    .hero-title { margin-bottom: 8px; }
+.faq p{margin-bottom:8px;}
+.disclaimer{
+padding:18px 16px;background:#fff7ed;border-radius:12px;
+border:1px solid #fed7aa;margin:10px 0;color:#7c2d12;font-size:14px;
+}
 
-    .hero-subtitle {
-      font-size: 15px;
-      margin: 10px 0 12px;
-      color: #1f2937;
-    }
-
-    .hero-list {
-      list-style: none;
-      margin: 10px auto 12px;
-      max-width: 580px;
-      text-align: left;
-      font-size: 14px;
-      color: #4b5563;
-    }
-
-    .section-grey {
-      background: #f3f4f6;
-      padding: 18px 16px;
-      border-radius: var(--card-radius);
-      box-shadow: var(--shadow-soft);
-      margin: 8px 0;
-    }
-
-    .included-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      justify-content: space-between;
-      margin-top: 10px;
-    }
-
-    .included-item {
-      flex: 1 1 260px;
-      padding: 14px;
-      background: #ffffff;
-      border-radius: 10px;
-      border: 1px solid #e5e7eb;
-      font-size: 14px;
-      color: #4b5563;
-    }
-
-    .pricing { text-align: center; }
-
-    .price-box {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 12px;
-      border: 2px solid var(--blue);
-      background: #eff6ff;
-      margin: 8px 0 10px;
-      transition: all 0.2s ease;
-    }
-
-    .price-box:hover {
-      box-shadow: 0 0 16px rgba(37, 99, 235, 0.45);
-      transform: translateY(-2px);
-    }
-
-    .price-main {
-      font-size: 24px;
-      font-weight: bold;
-      color: var(--blue-dark);
-    }
-
-    .price-main span {
-      font-size: 14px;
-      font-weight: normal;
-      color: #4b5563;
-    }
-
-    .pricing-list {
-      list-style: none;
-      max-width: 460px;
-      margin: 8px auto 10px;
-      text-align: left;
-      font-size: 14px;
-      color: #374151;
-    }
-
-    .faq p { margin-bottom: 8px; }
-    .faq strong { display: block; }
-
-    .disclaimer {
-      padding: 18px 16px;
-      background: #fff7ed;
-      border-radius: 12px;
-      border: 1px solid #fed7aa;
-      margin: 10px 0;
-      color: #7c2d12;
-      font-size: 14px;
-    }
-
-    .footer {
-      padding: 16px 10px;
-      background: #111827;
-      color: #e5e7eb;
-      border-radius: 10px;
-      text-align: center;
-      font-size: 13px;
-    }
-
-    .footer a { color: #93c5fd; text-decoration: none; margin: 0 8px; }
-    .footer-small { font-size: 12px; color: #9ca3af; margin-top: 4px; }
-
-  </style>
+.footer{
+padding:16px 10px;background:#111827;color:#e5e7eb;border-radius:10px;
+text-align:center;font-size:13px;
+}
+.footer a{color:#93c5fd;text-decoration:none;margin:0 8px;}
+.footer-small{font-size:12px;color:#9ca3af;margin-top:4px;}
+</style>
 </head>
+
 <body>
 
-<div style="width: 100%; max-width: 1100px; margin: 8px auto; border-radius: 12px; overflow: hidden;">
-  <img src="images/banner-top.png" alt="Pass your G1 test on the first try" style="width: 100%; display: block;">
+<div style="width:100%;max-width:1100px;margin:8px auto;border-radius:12px;overflow:hidden;">
+<img src="images/banner-top.png" style="width:100%;display:block;">
 </div>
 
 <div class="page">
 
+<!-- HERO -->
 <section class="card hero center">
-  <h1 class="hero-title">Ontario G1 Practice Test</h1>
+<h1>Ontario G1 Practice Test</h1>
 
-  <div style="margin: 8px 0 6px;">
-    <a href="https://buy.stripe.com/00wdR9csTeCG1KUfFQcMM00" class="btn-primary" target="_blank">
-      👉 Start Now – $15/month
-    </a>
-  </div>
+<div style="margin:8px 0 6px;">
+<a href="https://buy.stripe.com/00wdR9csTeCG1KUfFQcMM00" class="btn-primary" target="_blank">
+👉 Start Now – $15/month
+</a>
+</div>
 
-  <p class="hero-subtitle">
-    Pass your G1 Knowledge Test on the First Try.
-  </p>
+<p class="hero-subtitle">
+Study smarter. Walk into your G1 test confident.
+</p>
 
-  <ul class="hero-list">
-    <li>✔ 200+ original, Ontario-accurate practice questions</li>
-    <li>✔ Road rules + road signs + real exam-style scenarios</li>
-    <li>✔ Tracks your progress & adapts to your weak areas</li>
-    <li>✔ Mobile-friendly, study anywhere</li>
-    <li>✔ New questions added monthly</li>
-  </ul>
+<ul class="hero-list">
+<li>✔ 200+ Ontario-accurate practice questions</li>
+<li>✔ Road rules + signs + real exam scenarios</li>
+<li>✔ Tracks weak areas automatically</li>
+<li>✔ Study on phone, tablet, or desktop</li>
+<li>✔ Updated regularly</li>
+</ul>
 </section>
 
+<!-- INCLUDED -->
 <section class="section-grey">
-  <h2 class="center" style="margin-bottom: 12px;">What’s Included</h2>
+<h2 class="center">What’s Included</h2>
 
-  <div class="included-grid">
-    <div class="included-item">
-      <h3>Accurate & Updated</h3>
-      <p>All questions follow the Official MTO Driver’s Handbook reference.</p>
-    </div>
-    <div class="included-item">
-      <h3>Real Exam Simulation</h3>
-      <p>True G1-style mock exams with balanced road rules and signs.</p>
-    </div>
-    <div class="included-item">
-      <h3>Learn Faster</h3>
-      <p>Instant explanations help you fix weak spots quickly.</p>
-    </div>
-  </div>
+<div class="included-grid">
+<div class="included-item">
+<h3>Accurate Questions</h3>
+<p>Based on the official Ontario driver handbook and real exam structure.</p>
+</div>
+
+<div class="included-item">
+<h3>Real Test Simulation</h3>
+<p>Practice exactly like the real G1 so nothing surprises you on test day.</p>
+</div>
+
+<div class="included-item">
+<h3>Learn Faster</h3>
+<p>Clear explanations help you understand mistakes instantly.</p>
+</div>
+</div>
 </section>
 
+<!-- PRICING -->
 <section class="card pricing">
-  <h2>Simple Pricing</h2>
+<h2>Simple Pricing</h2>
 
-  <a href="https://buy.stripe.com/00wdR9csTeCG1KUfFQcMM00" target="_blank" style="text-decoration:none;">
-    <div class="price-box">
-      <div class="price-main">
-        $15 <span>CAD / month</span>
-      </div>
-    </div>
-  </a>
+<a href="https://buy.stripe.com/00wdR9csTeCG1KUfFQcMM00" target="_blank">
+<div class="price-box">
+<div class="price-main">$15 <span>CAD / month</span></div>
+</div>
+</a>
 
-  <ul class="pricing-list">
-    <li>✔ Unlimited access to all Ontario G1 practice questions</li>
-    <li>✔ Road rules, road signs, and realistic scenarios</li>
-    <li>✔ Progress tracking and instant explanations</li>
-    <li>✔ Works on phone, tablet, and desktop</li>
-  </ul>
+<ul class="pricing-list">
+<li>✔ Unlimited access to all questions</li>
+<li>✔ Mock exams + explanations</li>
+<li>✔ Works on all devices</li>
+<li>✔ Cancel anytime</li>
+</ul>
 
-  <div style="margin-top: 6px;">
-    <a href="https://buy.stripe.com/00wdR9csTeCG1KUfFQcMM00" class="btn-primary" target="_blank">
-      Get Instant Access
-    </a>
-  </div>
+<a href="https://buy.stripe.com/00wdR9csTeCG1KUfFQcMM00" class="btn-primary" target="_blank">
+Get Instant Access
+</a>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="card" style="text-align:center;padding:20px 18px;margin:10px 0;">
+<h2>What Learners Say</h2>
+
+<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;margin-top:12px;">
+
+<div style="flex:1 1 260px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;text-align:left;">
+<div style="color:#fbbf24;font-size:18px;">★★★★★</div>
+<h3 style="font-size:16px;margin:6px 0;">Passed first try</h3>
+<p style="font-size:14px;color:#4b5563;">
+Very similar to the real test. I walked in confident and finished fast.
+</p>
+<p style="font-size:13px;color:#6b7280;margin-top:6px;">— Daniel P., Toronto</p>
+</div>
+
+<div style="flex:1 1 260px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;text-align:left;">
+<div style="color:#fbbf24;font-size:18px;">★★★★★</div>
+<h3 style="font-size:16px;margin:6px 0;">Best G1 prep I found</h3>
+<p style="font-size:14px;color:#4b5563;">
+Clear explanations and realistic questions. Worth it compared to free sites.
+</p>
+<p style="font-size:13px;color:#6b7280;margin-top:6px;">— Sara M., Brampton</p>
+</div>
+
+<div style="flex:1 1 260px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;text-align:left;">
+<div style="color:#fbbf24;font-size:18px;">★★★★★</div>
+<h3 style="font-size:16px;margin:6px 0;">Helped me focus</h3>
+<p style="font-size:14px;color:#4b5563;">
+I studied 20 minutes a day for a week and passed easily.
+</p>
+<p style="font-size:13px;color:#6b7280;margin-top:6px;">— Kevin L., Hamilton</p>
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
 <section class="card faq">
-  <h2 class="center">Frequently Asked Questions</h2>
+<h2 class="center">FAQ</h2>
 
-  <p>
-    <strong>Q: Is this the real G1 test?</strong>
-    No. This is an independent study tool with original questions.
-  </p>
+<p><strong>Is this the real G1 test?</strong><br>
+No. It’s a study tool designed to prepare you for the real test.</p>
 
-  <p>
-    <strong>Q: Is this affiliated with MTO or DriveTest?</strong>
-    No. This app is not endorsed by the Ministry of Transportation of Ontario.
-  </p>
+<p><strong>Can I use it on my phone?</strong><br>
+Yes. Works on iPhone, Android, tablet, and computer.</p>
 
-  <p>
-    <strong>Q: How do I cancel?</strong>
-    You can cancel anytime using your Stripe receipt link.
-  </p>
+<p><strong>Can I cancel anytime?</strong><br>
+Yes. Cancel using the link in your Stripe receipt.</p>
 </section>
 
 <section class="disclaimer">
-  <h3 style="text-align:center;">Important Disclaimer</h3>
-  <p>
-    Ontario G1 Practice Test is an independent study tool and not affiliated with MTO or DriveTest.
-  </p>
+<h3 style="text-align:center;">Important Disclaimer</h3>
+<p>
+This app is not affiliated with MTO or DriveTest. All questions are original and for study purposes.
+</p>
 </section>
 
 <footer class="footer">
-  <p>
-    Need help? Email
-    <a href="mailto:g1practicetestontario@gmail.com">g1practicetestontario@gmail.com</a>
-  </p>
+<p>
+Need help?
+<a href="mailto:g1practicetestontario@gmail.com">g1practicetestontario@gmail.com</a>
+</p>
 
-  <p>
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms of Use</a>
-  </p>
+<p>
+<a href="privacy.html">Privacy Policy</a> |
+<a href="terms.html">Terms of Use</a>
+</p>
 
-  <p class="footer-small">
-    Ontario G1 Practice Test © 2025
-  </p>
+<p class="footer-small">
+Ontario G1 Practice Test © 2025
+</p>
 </footer>
 
 </div>
